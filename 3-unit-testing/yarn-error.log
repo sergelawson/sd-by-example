@@ -1,0 +1,47 @@
+Arguments: 
+  /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/node /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/yarn add typescript @type/node
+
+PATH: 
+  /Users/sergelawson/.bun/bin:/Users/sergelawson/.bun/bin:/Users/sergelawson/Library/pnpm:/usr/local/opt/postgresql@12/bin:/Users/sergelawson/miniconda3/condabin:/Users/sergelawson/Library/Android/sdk/tools/bin:/Users/sergelawson/Library/Android/sdk/tools:/Users/sergelawson/Library/Android/sdk/platform-tools:/Users/sergelawson/.nvm/versions/node/v18.16.1/bin:/Users/sergelawson/.rvm/gems/ruby-2.7.6/bin:/Users/sergelawson/.rvm/gems/ruby-2.7.6@global/bin:/Users/sergelawson/.rvm/rubies/ruby-2.7.6/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/sergelawson/.fig/bin:/Users/sergelawson/.local/bin:/Users/sergelawson/.rvm/bin:/Users/sergelawson/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@type%2fnode: Not found
+      at params.callback [as _callback] (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "3-unit-testing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

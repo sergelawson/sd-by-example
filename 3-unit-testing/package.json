@@ -1,0 +1,25 @@
+{
+  "name": "3-unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "npx tsc -w",
+    "test": "node ./dist/run-test.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "caller": "^1.1.0",
+    "glob": "^10.3.10",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/caller": "^1.0.2",
+    "@types/glob": "^8.1.0",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2"
+  }
+}
