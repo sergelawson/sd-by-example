@@ -17,15 +17,10 @@ const main = () => {
     const hash = crypto_1.default.createHash(algo);
     hash.setEncoding("hex");
     const filename = process.argv[2];
-    const file = fs_1.default.readFileSync(filename);
-    if (file) {
-        hash.write(file);
-        hash.end();
-        const sha1sum = hash.read();
-        console.log(`${algo.toUpperCase()} of ${filename} is ${sha1sum}`);
-    }
-    else {
-        console.log("Provide a text to hash");
-    }
+    fs_1.default.createReadStream(filename).pipe(hash);
+    hash.on("finish", () => {
+        const final = hash.read();
+        console.log(`${algo.toUpperCase()} of ${filename} is ${final}`);
+    });
 };
 main();

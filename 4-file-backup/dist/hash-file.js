@@ -18,14 +18,13 @@ const main = () => {
     hash.setEncoding("hex");
     const filename = process.argv[2];
     const file = fs_1.default.readFileSync(filename);
-    if (file) {
-        hash.write(file);
-        hash.end();
-        const sha1sum = hash.read();
-        console.log(`${algo.toUpperCase()} of ${filename} is ${sha1sum}`);
+    if (!file) {
+        console.log("Provide a file to hash");
+        return;
     }
-    else {
-        console.log("Provide a text to hash");
-    }
+    hash.write(file);
+    hash.end();
+    const sha1sum = hash.read();
+    console.log(`${algo.toUpperCase()} of ${filename} is ${sha1sum}`);
 };
 main();

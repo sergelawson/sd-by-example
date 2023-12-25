@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/node /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/yarn add @types/crypto
+  /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/node /Users/sergelawson/.nvm/versions/node/v18.16.1/bin/yarn add -D @types/fs
 
 PATH: 
   /Users/sergelawson/.bun/bin:/Users/sergelawson/.bun/bin:/Users/sergelawson/Library/pnpm:/usr/local/opt/postgresql@12/bin:/Users/sergelawson/miniconda3/condabin:/Users/sergelawson/Library/Android/sdk/tools/bin:/Users/sergelawson/Library/Android/sdk/tools:/Users/sergelawson/Library/Android/sdk/platform-tools:/Users/sergelawson/.nvm/versions/node/v18.16.1/bin:/Users/sergelawson/.rvm/gems/ruby-2.7.6/bin:/Users/sergelawson/.rvm/gems/ruby-2.7.6@global/bin:/Users/sergelawson/.rvm/rubies/ruby-2.7.6/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/sergelawson/.fig/bin:/Users/sergelawson/.local/bin:/Users/sergelawson/.rvm/bin:/Users/sergelawson/.rvm/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fcrypto: Not found
+  Error: https://registry.yarnpkg.com/@types%2ffs: Not found
       at params.callback [as _callback] (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:66145:18)
       at self.callback (/Users/sergelawson/.nvm/versions/node/v18.16.1/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)

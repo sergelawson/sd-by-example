@@ -1,8 +1,7 @@
 import crypto from "crypto";
+import fs from "fs";
 
 const main = () => {
-  const text = process.argv[2];
-
   let algo = "sha1";
 
   if (process.argv[3]) {
@@ -18,17 +17,15 @@ const main = () => {
 
   hash.setEncoding("hex");
 
-  if (text) {
-    hash.write(text);
+  const filename = process.argv[2];
 
-    hash.end();
+  fs.createReadStream(filename).pipe(hash);
 
-    const sha1sum = hash.read();
+  hash.on("finish", () => {
+    const final = hash.read();
 
-    console.log(`${algo.toUpperCase()} of ${text} is ${sha1sum}`);
-  } else {
-    console.log("Provide a text to hash");
-  }
+    console.log(`${algo.toUpperCase()} of ${filename} is ${final}`);
+  });
 };
 
 main();
